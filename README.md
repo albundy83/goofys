@@ -1,7 +1,7 @@
 Goofys is a high-performance, POSIX-ish [Amazon S3](https://aws.amazon.com/s3/) file system written in Go
 
-[![Build Status](https://travis-ci.org/kahing/goofys.svg?branch=master)](https://travis-ci.org/kahing/goofys)
-[![Github All Releases](https://img.shields.io/github/downloads/kahing/goofys/total.svg)](https://github.com/kahing/goofys/releases/)
+[![Build Status](https://travis-ci.org/albundy83/goofys.svg?branch=master)](https://travis-ci.org/kahing/goofys)
+[![Github All Releases](https://img.shields.io/github/downloads/albundy83/goofys/total.svg)](https://github.com/albundy83/goofys/releases/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/s3goofys.svg?style=social&label=Follow)](https://twitter.com/s3goofys)
 
 # Overview
