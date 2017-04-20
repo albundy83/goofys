@@ -3,12 +3,10 @@ sudo: required
 dist: trusty
 addons:
   apt_packages:
-   - openjdk-7-jre-headless
-env:
-- GO15VENDOREXPERIMENT=1
+   - openjdk-8-jre-headless
 install:
 - go get -t $(go list ./... | grep -v /vendor/)
 - mkdir /tmp/mnt
 - make
 go:
-  - 1.5.1
+  - 1.8.1
