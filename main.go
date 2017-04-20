@@ -188,7 +188,7 @@ func main() {
 		mountPoint := c.Args()[1]
 		flags := PopulateFlags(c)
 
-		InitLoggers(!flags.Foreground)
+		// InitLoggers(!flags.Foreground)
 
 		massagePath()
 
