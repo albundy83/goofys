@@ -16,7 +16,7 @@
 package main
 
 import (
-	. "github.com/kahing/goofys/internal"
+	. "github.com/albundy83/goofys/internal"
 
 	"fmt"
 	"os"
