@@ -39,7 +39,7 @@ import (
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 )
 
 // goofys is a Filey System written in Go. All the backend data is
@@ -114,10 +114,8 @@ func NewGoofys(bucket string, awsConfig *aws.Config, flags *FlagStorage) *Goofys
 	colon := strings.Index(bucket, ":")
 	if colon != -1 {
 		fs.prefix = bucket[colon+1:]
+		fs.prefix = strings.Trim(fs.prefix, "/")
 		fs.prefix += "/"
-		for strings.HasSuffix(fs.prefix, "//") {
-			fs.prefix = fs.prefix[0 : len(fs.prefix)-1]
-		}
 
 		fs.bucket = bucket[0:colon]
 		bucket = fs.bucket
